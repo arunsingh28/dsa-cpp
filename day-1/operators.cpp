@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    double a, b;
     char choice;
     cout << "Enter first digit: ";
     cin >> a;
