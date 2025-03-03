@@ -5,7 +5,7 @@ function findSI(p, r, t) {
 
 // find the max of 2 number
 function findMaxOf2Numbers(a, b) {
-  return a > b;
+  return a > b ? a : b;
 }
 
 // calculate factorial of n
