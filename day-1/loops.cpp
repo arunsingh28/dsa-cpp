@@ -68,13 +68,33 @@ using namespace std;
 
 // }
 
-int main(){
-    int i=1,N;
-    cin >> N;
-    while(i <= N){
-        cout << i << " ";
-        i++;
+// int main(){
+//     int i=1,N;
+//     cin >> N;
+//     while(i <= N){
+//         cout << i << " ";
+//         i++;
+//     }
+//     cout <<endl;
+//     return 0;
+// }
+
+bool isPlaindrome(int num){
+    int original = num, reversed = 0;
+    while(num > 0){
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
     }
-    cout <<endl;
+    return original == reversed;
+}
+
+int main(){
+   int num;
+   cin >> num;
+   if(isPlaindrome(num))
+   cout << num << " is a Plaindrom number"<<endl;
+   else 
+    cout << num << " is not a Plaindrome number"<<endl;
     return 0;
 }
