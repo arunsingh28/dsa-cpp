@@ -8,11 +8,11 @@ int main(){
     cout << "Enter the nth number: ";
     cin >> N;
 
-    // for(i=1; i <= N; i++){
-    //     if(i%2 != 0){
-    //         sum += i;
-    //     }
-    // }
+    for(i=1; i <= N; i++){
+        if(i%2 != 0){
+            sum += i;
+        }
+    }
 
     // while(i <= N){
     //     if(i%2 !=0){
